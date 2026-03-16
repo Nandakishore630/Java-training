@@ -1,12 +1,9 @@
-import java.util.*;
-public class SwitchExample{
+public class ArithmeticOperators{
  public static void main(String[] args){
-  Scanner sc=new Scanner(System.in);
-  int day=sc.nextInt();
-  switch(day){
-   case 1:System.out.println("Monday");break;
-   case 2:System.out.println("Tuesday");break;
-   default:System.out.println("Other");
-  }
+  int a=10,b=5;
+  System.out.println(a+b);
+  System.out.println(a-b);
+  System.out.println(a*b);
+  System.out.println(a/b);
  }
 }

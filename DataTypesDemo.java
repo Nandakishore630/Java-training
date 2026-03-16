@@ -1,14 +1,8 @@
-class A{
- A(){ System.out.println("Parent"); }
-}
-class B extends A{
- B(){
-  super();
-  System.out.println("Child");
- }
-}
-public class SuperKeywordDemo{
+class Shape{ void draw(){System.out.println("Shape");} }
+class Circle extends Shape{ void draw(){System.out.println("Circle");} }
+public class MethodOverriding{
  public static void main(String[] args){
-  new B();
+  Shape s=new Circle();
+  s.draw();
  }
 }

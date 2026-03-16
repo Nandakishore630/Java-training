@@ -1,8 +1,13 @@
-public class ArraySum{
+import java.util.*;
+public class WhileFactorial{
  public static void main(String[] args){
-  int[] arr={1,2,3,4,5};
-  int sum=0;
-  for(int i:arr) sum+=i;
-  System.out.println(sum);
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+  int fact=1;
+  while(n>0){
+   fact*=n;
+   n--;
+  }
+  System.out.println(fact);
  }
 }
